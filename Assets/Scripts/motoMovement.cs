@@ -14,6 +14,10 @@ public class motoMovement : MonoBehaviour
     public float coefAvance = 5.0f;
     float giro;
     public float coefGiro = 2.0f;
+    private bool turbo;
+    private bool turbando;
+    float contador;
+
 
     void Start()
     {
@@ -30,8 +34,7 @@ public class motoMovement : MonoBehaviour
             if (Physics.Raycast(contactoSuelo[i].transform.position, -Vector3.up, out hit, alturaMuelle, layerMask))
             {
                 body.AddForceAtPosition(contactoSuelo[i].transform.up * gravityForce * (((alturaMuelle - hit.distance) / alturaMuelle)), contactoSuelo[i].transform.position);
-                contactoSuelo[i].GetComponent<LineRenderer>().SetPosition(0, contactoSuelo[i].transform.position);
-                contactoSuelo[i].GetComponent<LineRenderer>().SetPosition(1, hit.transform.position);
+                
             }
             else
             {
@@ -40,6 +43,17 @@ public class motoMovement : MonoBehaviour
         }
         body.AddForce(transform.forward * avance * coefAvance);
         body.AddRelativeTorque(Vector3.up * giro * coefGiro);
+
+        if (turbando)
+        {
+            contador += Time.deltaTime;
+            body.AddForce(transform.forward * 10 * coefAvance);
+            if (contador > 8)
+            {
+                turbando = false;
+                contador = 0;
+            }
+        }
 
 
     }
@@ -77,6 +91,11 @@ public class motoMovement : MonoBehaviour
 
     public void tomas_turbin()
     {
+
+        if (!turbando)
+        {
+            turbando = true;
+        }
 
     }
 
