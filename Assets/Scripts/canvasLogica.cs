@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class canvasLogica : MonoBehaviour
 {
+    
     public void moto()
     {
         SceneManager.LoadScene("MotoScene");
