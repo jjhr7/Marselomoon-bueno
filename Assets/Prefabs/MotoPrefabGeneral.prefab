@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 8815104296250204147}
   - component: {fileID: 8815104296250204144}
   - component: {fileID: 8815104296250204145}
+  - component: {fileID: 3643738329387994685}
   m_Layer: 6
   m_Name: MotoPrefabGeneral
   m_TagString: Untagged
@@ -158,6 +159,20 @@ MonoBehaviour:
   fuego2: {fileID: 6877434977262396237}
   fuegoT: {fileID: 8187108011226937275}
   fuegoT2: {fileID: 3227296873439381128}
+--- !u!64 &3643738329387994685
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8815104296250204142}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8815104297017140287
 GameObject:
   m_ObjectHideFlags: 0
