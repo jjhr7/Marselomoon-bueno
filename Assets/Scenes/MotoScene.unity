@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44523686, g: 0.48915797, b: 0.5432, a: 1}
+  m_IndirectSpecularColor: {r: 0.44523686, g: 0.48915863, b: 0.5431992, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -439,7 +439,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 14.9, y: -30.54, z: -0}
 --- !u!1 &941880537
 GameObject:
@@ -754,6 +754,23 @@ Transform:
   m_Father: {fileID: 1007421790}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1726234600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2749258581932004564, guid: 947413112b74f8e4ea6555d2576537db, type: 3}
+  m_PrefabInstance: {fileID: 2749258582061217986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1726234601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726234600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb2ecd70f0b680d49be3b5b1be97a5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013714638
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,7 +801,7 @@ Transform:
   - {fileID: 654994858}
   - {fileID: 318996303}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2749258582061217986
 PrefabInstance:
@@ -793,6 +810,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2334596701780571423, guid: 947413112b74f8e4ea6555d2576537db, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1726234601}
+    - target: {fileID: 2334596701780571423, guid: 947413112b74f8e4ea6555d2576537db, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: home
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334596701780571423, guid: 947413112b74f8e4ea6555d2576537db, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: canvasLogica, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2367217235010456963, guid: 947413112b74f8e4ea6555d2576537db, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2367217235010456963, guid: 947413112b74f8e4ea6555d2576537db, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2367217235010456963, guid: 947413112b74f8e4ea6555d2576537db, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2367217235010456963, guid: 947413112b74f8e4ea6555d2576537db, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15
+      objectReference: {fileID: 0}
     - target: {fileID: 2749258581802912413, guid: 947413112b74f8e4ea6555d2576537db, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 31.600037
@@ -811,7 +856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2749258581932004568, guid: 947413112b74f8e4ea6555d2576537db, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2749258581932004568, guid: 947413112b74f8e4ea6555d2576537db, type: 3}
       propertyPath: m_AnchorMax.x
