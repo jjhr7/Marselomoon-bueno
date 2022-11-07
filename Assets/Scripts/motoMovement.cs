@@ -135,7 +135,9 @@ public class motoMovement : MonoBehaviour
 
     public void resetCar()
     {
-        body.transform.position = new Vector3(0, 1, 0);
+        body.transform.position = new Vector3(0, 60, 0);
         body.transform.rotation = Quaternion.identity;
+        turbando = false;
+        contador = 0;
     }
 }
