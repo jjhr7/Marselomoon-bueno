@@ -744,13 +744,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: its-k
+  mTrackableName: tarjeta-90c
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Marselomoon.xml
-  mAspectRatio: 0.6669922
+  mAspectRatio: 1.4430555
   mImageTargetType: 0
   mWidth: 1000
-  mHeight: 666.9922
+  mHeight: 1443.0555
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -784,7 +784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1007421789}
   mHiddenRoot: {fileID: 0}
-  mTargetName: its-k
+  mTargetName: tarjeta-90c
   mDatasetName: Vuforia/Marselomoon.xml
   mCastedBehaviour: {fileID: 1007421789}
   mMeshFilter: {fileID: 0}
@@ -1135,9 +1135,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: MotoPrefabGeneral
       objectReference: {fileID: 0}
+    - target: {fileID: 8815104296250204145, guid: 5d00ea225066562439594487c6201bca, type: 3}
+      propertyPath: coefGiro
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815104296250204145, guid: 5d00ea225066562439594487c6201bca, type: 3}
+      propertyPath: coefAvance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815104296250204145, guid: 5d00ea225066562439594487c6201bca, type: 3}
+      propertyPath: alturaMuelle
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 8815104296250204146, guid: 5d00ea225066562439594487c6201bca, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815104296250204146, guid: 5d00ea225066562439594487c6201bca, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815104296250204146, guid: 5d00ea225066562439594487c6201bca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815104296250204146, guid: 5d00ea225066562439594487c6201bca, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8815104296250204146, guid: 5d00ea225066562439594487c6201bca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1145,7 +1169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8815104296250204146, guid: 5d00ea225066562439594487c6201bca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.109
+      value: 15.9
       objectReference: {fileID: 0}
     - target: {fileID: 8815104296250204146, guid: 5d00ea225066562439594487c6201bca, type: 3}
       propertyPath: m_LocalPosition.z
