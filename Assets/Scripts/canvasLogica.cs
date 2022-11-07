@@ -19,4 +19,9 @@ public class canvasLogica : MonoBehaviour
     {
         SceneManager.LoadScene("InstruccionesScene");
     }
+
+    public void home()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
 }
