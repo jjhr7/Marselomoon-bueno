@@ -23,6 +23,7 @@ public class motoMovement : MonoBehaviour
     public GameObject fuego2;
     public GameObject fuegoT;
     public GameObject fuegoT2;
+    public Vector3 reset;
 
 
     void Start()
@@ -32,6 +33,7 @@ public class motoMovement : MonoBehaviour
         layerMask = ~layerMask;
         body.centerOfMass = new Vector3(0, -0.5f, 0);
         m_deadZone = 0.2f;
+        reset = new Vector3(0, 120, 0);
     }
     private void FixedUpdate()
     {
@@ -135,7 +137,7 @@ public class motoMovement : MonoBehaviour
 
     public void resetCar()
     {
-        body.transform.position = new Vector3(0, 60, 0);
+        body.transform.position = reset;
         body.transform.rotation = Quaternion.identity;
         turbando = false;
         contador = 0;
