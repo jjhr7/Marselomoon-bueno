@@ -953,9 +953,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1978967124268819370, guid: d96c982bf95725f4ba1d037bb994aac6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c6b532042154b084987810165ddba098, type: 3}
     - target: {fileID: 8021370916968317400, guid: d96c982bf95725f4ba1d037bb994aac6, type: 3}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021370916968317400, guid: d96c982bf95725f4ba1d037bb994aac6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021370916968317400, guid: d96c982bf95725f4ba1d037bb994aac6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8420903626801163121, guid: d96c982bf95725f4ba1d037bb994aac6, type: 3}
       propertyPath: m_Name
@@ -1089,11 +1101,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8815104296250204145, guid: 5d00ea225066562439594487c6201bca, type: 3}
       propertyPath: coefTurbo
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8815104296250204145, guid: 5d00ea225066562439594487c6201bca, type: 3}
       propertyPath: coefAvance
-      value: 60
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8815104296250204145, guid: 5d00ea225066562439594487c6201bca, type: 3}
       propertyPath: alturaMuelle
