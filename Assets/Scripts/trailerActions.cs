@@ -8,10 +8,14 @@ public class trailerActions : MonoBehaviour
 {
     public VideoPlayer v;
 
+    public long frameEmpiezaVideo;
+
     // Start is called before the first frame update
     void Start()
     {
         v = this.GetComponent<VideoPlayer>();
+
+
 
     }
 
@@ -40,5 +44,37 @@ public class trailerActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    }
+
+    // funciones botones UI escena Video
+    public void playStopVideo()
+    {
+        if (v.isPlaying)
+        {
+            v.Pause();
+        }
+        else
+        {
+            v.Play();
+        }
+    }
+
+    public void restartVideo()
+    {
+        var frame = frameEmpiezaVideo;
+        v.frame = (long)frame;
+        v.Play();
+    }
+
+    public void haciaAdelante()
+    {
+        if (v.canStep) // si no funciona quitar esta verga de if angle dies on casetaAngle return F
+        {
+            v.StepForward();
+        }
+        else
+        {
+            restartVideo();
+        }
     }
 }
