@@ -33,7 +33,7 @@ public class motoMovement : MonoBehaviour
         layerMask = ~layerMask;
         body.centerOfMass = new Vector3(0, -0.5f, 0);
         m_deadZone = 0.2f;
-        reset = new Vector3(0, 120, 0);
+        reset = new Vector3(0, 80, 0);
     }
     private void FixedUpdate()
     {
