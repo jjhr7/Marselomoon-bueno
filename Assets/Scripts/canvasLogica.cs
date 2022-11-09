@@ -6,14 +6,6 @@ using UnityEngine.SceneManagement;
 public class canvasLogica : MonoBehaviour
 {
 
-    public Transform arcamera;
-    private void Update()
-    {
-
-        float distancia = Vector3.Distance(transform.position, arcamera.position);
-        print(distancia);
-
-    }
     public void moto()
     {
         SceneManager.LoadScene("MotoScene");
