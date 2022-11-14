@@ -158,6 +158,7 @@ MonoBehaviour:
   fuego2: {fileID: 6877434977262396237}
   fuegoT: {fileID: 8187108011226937275}
   fuegoT2: {fileID: 3227296873439381128}
+  reset: {x: 0, y: 0, z: 0}
 --- !u!1 &8815104297017140287
 GameObject:
   m_ObjectHideFlags: 0
