@@ -222,6 +222,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: balaPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 5321589702261872273, guid: cba3f081cb836ec4a83991081e37206e, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.8173207
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109394980306589679, guid: cba3f081cb836ec4a83991081e37206e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2026985475952ce40800159fc1656abc, type: 2}
     - target: {fileID: 6872122687046617121, guid: cba3f081cb836ec4a83991081e37206e, type: 3}
       propertyPath: m_RootOrder
       value: 2
