@@ -6,6 +6,17 @@ using UnityEngine.SceneManagement;
 public class canvasLogica : MonoBehaviour
 {
 
+
+
+    public void reload()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void minijuegp()
+    {
+        SceneManager.LoadScene("MinijuegoScene");
+    }
     public void moto()
     {
         SceneManager.LoadScene("MotoScene");

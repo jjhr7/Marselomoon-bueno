@@ -35,7 +35,6 @@ public class playerControls : MonoBehaviour
     //Upon collision with another GameObject
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.layer);
         if (other.gameObject.layer == LayerMask.NameToLayer("Bala"))
         {
             recibirdanyo();
