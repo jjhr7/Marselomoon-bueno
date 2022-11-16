@@ -338,6 +338,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 188
       objectReference: {fileID: 0}
+    - target: {fileID: 2302586802486867866, guid: 78f75f134648e4e0f8153282f7af4af3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302586802486867866, guid: 78f75f134648e4e0f8153282f7af4af3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302586802486867866, guid: 78f75f134648e4e0f8153282f7af4af3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 335273973}
+    - target: {fileID: 2302586802486867866, guid: 78f75f134648e4e0f8153282f7af4af3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302586802486867866, guid: 78f75f134648e4e0f8153282f7af4af3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: minijuegp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302586802486867866, guid: 78f75f134648e4e0f8153282f7af4af3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: canvasLogica, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302586802486867866, guid: 78f75f134648e4e0f8153282f7af4af3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2302586802486867867, guid: 78f75f134648e4e0f8153282f7af4af3, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.023765
