@@ -35,7 +35,8 @@ public class playerControls : MonoBehaviour
     //Upon collision with another GameObject
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.gameObject.layer.Equals("Bala"))
+        Debug.Log(other.gameObject.layer);
+        if (other.gameObject.layer == LayerMask.NameToLayer("Bala"))
         {
             recibirdanyo();
         }
@@ -44,6 +45,7 @@ public class playerControls : MonoBehaviour
     public void disparo()
     {
         //1-Instanciar la BalaPrefab en las posiciones de BalaInicio
+        
         GameObject BalaTemporal = Instantiate(BalaPrefab, BalaInicio.transform.position, BalaInicio.transform.rotation) as GameObject;
 
         //Obtener Rigidbody para agregar Fuerza. 

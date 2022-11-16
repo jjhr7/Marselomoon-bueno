@@ -7,6 +7,8 @@ public class CtrlGame : MonoBehaviour
     public static System.Action<GameStates, GameStates> OnChangeState;
 
     GameStates state = GameStates.None;
+    bool tamuerto;
+
 
     public GameStates State
     {
@@ -21,6 +23,10 @@ public class CtrlGame : MonoBehaviour
 
     public void TargetLost()
     {
+        if (tamuerto)
+        {
+            return;
+        }
         State = GameStates.LookForGroud;
         Debug.Log("TargetLost");
 
@@ -28,6 +34,10 @@ public class CtrlGame : MonoBehaviour
 
     public void PlaneFound()
     {
+        if (tamuerto)
+        {
+            return;
+        }
         if (State == GameStates.PlayGame) return;
         State = GameStates.PlayGame;
         Debug.Log("PlayGame");
@@ -36,13 +46,15 @@ public class CtrlGame : MonoBehaviour
     {
         State = GameStates.Death;
         this.gameObject.SetActive(false);
+        tamuerto = true;
         Debug.Log("Death");
     }
 
     public void Start()
     {
+        tamuerto = false;
         State = GameStates.LookForGroud;
-        Debug.Log("PlayGame");
+        Debug.Log("LookForGroud");
     }
 
     public void Log(string message)
