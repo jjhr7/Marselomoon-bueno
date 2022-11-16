@@ -343,5 +343,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Particle System
       objectReference: {fileID: 0}
+    - target: {fileID: 4515220482857477039, guid: e7bd93a85e0329347a4bf8996f3ba125, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2026985475952ce40800159fc1656abc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7bd93a85e0329347a4bf8996f3ba125, type: 3}
