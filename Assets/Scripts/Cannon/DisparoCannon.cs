@@ -12,19 +12,25 @@ public class DisparoCannon : MonoBehaviour
     [SerializeField]
     private Transform bulletPointInstance;
     [SerializeField]
-    private float _timer = 2f; // tiempo de disparo cada 2 segundos
-    //private float timeCount = 0f; // 
+    private float _timerini = 1.5f; // tiempo de disparo cada 2 segundos
+    [SerializeField]
+    private float _timerfin = 3f; // tiempo de disparo cada 2 segundos
+    [SerializeField]
+    private float _timer; // tiempo de disparo cada 2 segundos
+    private float timeCount = 0f; // 
 
     
     private int _counter; //numero de disparos del bucle
     [SerializeField]
-    private int _maxCounter = 20; // max de disparon que puede hacer
+    private int _maxCounter; // max de disparon que puede hacer
 
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(DispararMisiles());
+        _timer = UnityEngine.Random.Range(_timerini, _timerfin);
+        _maxCounter = 20;
+        //StartCoroutine(DispararMisiles());
     }
 
     IEnumerator DispararMisiles() // metodo courutine
@@ -33,6 +39,9 @@ public class DisparoCannon : MonoBehaviour
         for(int i= 0; i<_maxCounter; i++) //bucle pa instanciar un num x de misiles
         {
             _counter++; // 1++
+            Debug.Log("Bum Bum");
+            Debug.Log(i);
+
             Instantiate(_bullet, bulletPointInstance.position, bulletPointInstance.rotation); //instanciar misil
             yield return new WaitForSeconds(_timer); // espera el tiempo que le ponemos y sale
         }
@@ -43,5 +52,11 @@ public class DisparoCannon : MonoBehaviour
     void Update()
     {
         
+        timeCount += Time.deltaTime;
+        if (timeCount > _timer) {
+            Instantiate(_bullet, bulletPointInstance.position, bulletPointInstance.rotation);
+            timeCount = 0;
+            _timer = UnityEngine.Random.Range(_timerini, _timerfin);
+        }
     }
 }
